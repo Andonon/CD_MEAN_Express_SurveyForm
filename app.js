@@ -17,15 +17,15 @@ app.get('/', function(req, res){
 });
 
 app.post('/', function(req, res){
-    res.redirect('/')
+    res.redirect('/');
 });
 
 app.post('/result', function(req, res){
-    postData = req.body
-    console.log("*****************************************************")
-    console.log(req.body)
-    console.log("*****************************************************")
-    res.render('result', postData)
+    postData = req.body;
+    console.log("*****************************************************");
+    console.log(req.body);
+    console.log("*****************************************************");
+    res.render('result', postData);
 });
 
 port=5000;
